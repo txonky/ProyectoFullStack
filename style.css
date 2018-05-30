@@ -1,0 +1,17 @@
+header{ 
+  
+  background-color:#4D4D4D;
+  margin:0px;
+  padding:0px;
+  border:2px solid black;
+  text-align:center;
+  color:white;}
+body{
+  background-color:#666666;
+}
+
+nav{width:100%;
+ text-align:center;
+}
+a{text-align: center;
+text-decoration:none;}
