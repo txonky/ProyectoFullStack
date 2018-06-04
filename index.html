@@ -9,14 +9,74 @@
   <body>
     <main>
       <header>
-      <img src="bitcoin.jpg" ></img>
+     
       </header>
       <nav>
        <a href="/Compras">Compras</a>
        <a href="/Historial">Historial</a>
        <a href="/Perfil">Perfil</a>
       </nav>
-      <section >Contenido </section>
+      <section >
+          <form action="/action_page">
+            <fieldset>
+            <legend>Cambio de contraseña:</legend>
+            Contraseña antigua:<br>
+            <input type="password" name="oldPassword"  required="required" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+           <br>
+            Contraseña nueva:<br>
+            <input type="password" name="newPassword"   required="required" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"><br>
+            
+           Cofirmar contraseña:<br>
+            <input type="password" name="confirmPassword"  required="required" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"><br>
+           <br>
+            <input type="submit" value="Enviar">
+          
+            </fieldset>
+           </form>
+           <form action="/action_page">
+            <fieldset>
+            <legend>Información del usuario:</legend>
+             <br>
+              E-mail:
+              <input type="email" name="email" required="required" min-length="10" max-length="30">
+              <br>
+              <br>
+              Telefono:
+              <input type="tel" name="telefono" maxlength="12" minlength="9" >
+              <br>
+              <br>
+              Prefijo:
+              <input type="num" name="prefijo" maxlength="3" minlength="1" >
+              <br>
+              <br>
+              Fecha de nacimiento
+              <input type="date" name="bday1" min="1900-1-1">
+              <br>
+              <br>
+              Foto DNI: <input name="myFile" type="file" required="required">
+              <br>
+              <br>
+              DNI: <input name="DNI" type="text" required="required" pattern="^[0-9]{8,8}[A-Za-z]$">
+              <br>
+              <br>
+              VISA <input  name= "VISA" type="text" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$">
+              <br>
+              <br>
+              Idioma <select type="text" name="Idioma" required="required" minlength="5" maxlength="5"><br>
+                  <option value="es-ES" selected="selected">Español</option>
+                  <option value="en">English</option>
+                  <option value="f">French</option>
+                  <option value="a">Germany</option>
+             <br>
+             <br><br>
+             <br>
+              <input type="submit" value="Enviar">
+              <br>
+              <br>
+             </form>
+            </fieldset>
+
+      </section>
       <aside></aside>
       <footer>Todos los derechos reservados</footer>
     </main>
