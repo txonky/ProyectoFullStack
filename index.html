@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="Aplicación para compra y venta de criptomoneda">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplicación de criptomoneda</title>
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
@@ -13,15 +14,18 @@
       <header>
      
       </header>
-      <nav>
-       <a href="/Compras">Compras</a>
-       <a href="/Historial">Historial</a>
-       <a href="/Perfil">Perfil</a>
-      </nav>
-      <section >
-          <div style="color:Tomato"> 
-              <i class="fa fa-car" style="font-size:48px;"></i>
-          </div>
+     
+      <div class="row">
+       <nav class="col-1 menu">
+         <ul>
+           <li><a href="/Compras">Compras</a></li>
+           <li><a href="/Historial">Historial</a></li>
+           <li><a href="/Perfil">Perfil</a></li>
+         </ul>
+       </nav>
+      
+
+      <div class="col-9">
           <form action="/action_page">
             <fieldset>
             <legend>Cambio de contraseña:</legend>
@@ -33,7 +37,7 @@
             
            Cofirmar contraseña:<br>
             <input type="password" name="confirmPassword"  required="required" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"><br>
-           <br>
+           
             <input type="submit" value="Enviar">
           
             </fieldset>
@@ -65,36 +69,44 @@
                 <i class="fas fa-id-card"></i>
                 <input name="myFile" type="file" required="required">
               </div>
-              </fieldset>
 
+              <div>Dni:</div>
+              <div>
+                <input name="DNI" type="text" required="required" pattern="^[0-9]{8,8}[A-Za-z]$">
+              </div>
+
+              <div>Idioma</div>
+              <div>
+                  <select type="text" name="Idioma" required="required" minlength="5" maxlength="5">
+                      <option value="es-ES" selected="selected">Español</option>
+                      <option value="en">English</option>
+                      <option value="f">French</option>
+                      <option value="a">Germany</option>
+                  </select>
+              </div>
+
+              <div>Visa</div>
+              <div>
+                <input  name= "VISA" type="text" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$"></div>
               
-             
-            
-              <br>
-              <br>
-              DNI: <input name="DNI" type="text" required="required" pattern="^[0-9]{8,8}[A-Za-z]$">
-              <br>
-              <br>
-              Idioma <select type="text" name="Idioma" required="required" minlength="5" maxlength="5">
-                <option value="es-ES" selected="selected">Español</option>
-                <option value="en">English</option>
-                <option value="f">French</option>
-                <option value="a">Germany</option>
-                </select>
-                
-              VISA <input  name= "VISA" type="text" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$">
-              
-             <br>
-              <input type="submit" value="Enviar">
-              <br>
-              <br>
-             </form>
+
+              <div>
+               <input type="submit" value="Enviar">
+              </div> 
+
             </fieldset>
+          </form>
+        </div>
+        <div class=col-2>
+          Aside
+          </div>
+        
 
+        
 
-      </section>
-      <aside></aside>
-      <footer><i class="fas fa-camera-retro fa-xs"></i> <i class="fas fa-camera-retro fa-sm"></i> <i class="fas fa-camera-retro fa-lg"></i> <i class="fas fa-camera-retro fa-2x"></i> <i class="fas fa-camera-retro fa-3x"></i> <i class="fas fa-camera-retro fa-5x fa-spin"></i> <i class="fas fa-camera-retro fa-7x"></i> <i class="fas fa-camera-retro fa-pulse fa-10x"></i> </footer>
+      </div>
+    
+     
     </main>
     
     
