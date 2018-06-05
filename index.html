@@ -5,7 +5,7 @@
     <meta name="description" content="Aplicación para compra y venta de criptomoneda">
     <title>Aplicación de criptomoneda</title>
     <link rel="stylesheet" type="text/css" href="style.css"/>
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <body>
     <main>
       <header>
@@ -17,6 +17,9 @@
        <a href="/Perfil">Perfil</a>
       </nav>
       <section >
+          <div style="color:Tomato"> 
+              <i class="fa fa-car" style="font-size:48px;"></i>
+          </div>
           <form action="/action_page">
             <fieldset>
             <legend>Cambio de contraseña:</legend>
@@ -59,16 +62,15 @@
               DNI: <input name="DNI" type="text" required="required" pattern="^[0-9]{8,8}[A-Za-z]$">
               <br>
               <br>
+              Idioma <select type="text" name="Idioma" required="required" minlength="5" maxlength="5">
+                <option value="es-ES" selected="selected">Español</option>
+                <option value="en">English</option>
+                <option value="f">French</option>
+                <option value="a">Germany</option>
+                </select>
+                
               VISA <input  name= "VISA" type="text" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$">
-              <br>
-              <br>
-              Idioma <select type="text" name="Idioma" required="required" minlength="5" maxlength="5"><br>
-                  <option value="es-ES" selected="selected">Español</option>
-                  <option value="en">English</option>
-                  <option value="f">French</option>
-                  <option value="a">Germany</option>
-             <br>
-             <br><br>
+              
              <br>
               <input type="submit" value="Enviar">
               <br>
