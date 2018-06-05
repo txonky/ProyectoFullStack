@@ -5,8 +5,10 @@
     <meta name="description" content="Aplicación para compra y venta de criptomoneda">
     <title>Aplicación de criptomoneda</title>
     <link rel="stylesheet" type="text/css" href="style.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <body>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+
+
+    <body>
     <main>
       <header>
      
@@ -38,25 +40,36 @@
            </form>
            <form action="/action_page">
             <fieldset>
-            <legend>Información del usuario:</legend>
-             <br>
-              E-mail:
-              <input type="email" name="email" required="required" min-length="10" max-length="30">
-              <br>
-              <br>
-              Telefono:
-              <input type="tel" name="telefono" maxlength="12" minlength="9" >
-              <br>
-              <br>
-              Prefijo:
-              <input type="num" name="prefijo" maxlength="3" minlength="1" >
-              <br>
-              <br>
-              Fecha de nacimiento
-              <input type="date" name="bday1" min="1900-1-1">
-              <br>
-              <br>
-              Foto DNI: <input name="myFile" type="file" required="required">
+              <legend>Información del usuario:</legend>
+              <div>Correo electronico:</div>
+              <div>
+                <i class="fas fa-envelope-square" style="font-size:20px;"></i>
+                <input type="email" name="email" required="required" min-length="10" max-length="30">
+              </div> 
+              
+              <div>Teléfono:</div>
+              <div>
+                Prefijo:<input type="num" name="prefijo" maxlength="3" minlength="1" >
+                <i class="fas fa-phone" style="font-size:16px;"></i>
+                <input type="tel" name="telefono" maxlength="12" minlength="9" >
+              </div>
+
+              <div>Fecha de nacimiento:</div>
+              <div>
+                <i class="fas fa-birthday-cake" style="font-size:18px;"></i>
+                <input type="date" name="bday1" min="1900-1-1">
+              </div>
+
+              <div>Adjunte foto de su  DNI:</div>
+              <div>
+                <i class="fas fa-id-card"></i>
+                <input name="myFile" type="file" required="required">
+              </div>
+              </fieldset>
+
+              
+             
+            
               <br>
               <br>
               DNI: <input name="DNI" type="text" required="required" pattern="^[0-9]{8,8}[A-Za-z]$">
@@ -78,9 +91,10 @@
              </form>
             </fieldset>
 
+
       </section>
       <aside></aside>
-      <footer>Todos los derechos reservados</footer>
+      <footer><i class="fas fa-camera-retro fa-xs"></i> <i class="fas fa-camera-retro fa-sm"></i> <i class="fas fa-camera-retro fa-lg"></i> <i class="fas fa-camera-retro fa-2x"></i> <i class="fas fa-camera-retro fa-3x"></i> <i class="fas fa-camera-retro fa-5x fa-spin"></i> <i class="fas fa-camera-retro fa-7x"></i> <i class="fas fa-camera-retro fa-pulse fa-10x"></i> </footer>
     </main>
     
     
